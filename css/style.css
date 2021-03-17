@@ -1,0 +1,72 @@
+/* Style global */
+
+/* fin style global */
+
+/* CSS par section */
+
+/* Début du header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.302), rgba(0, 0, 0, 0.302)),
+    url(../img/IMG_9554.jpg);
+  background-position: left;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  transform: rotate(45deg);
+  top: 330px;
+  left: calc(50% - 20px);
+  position: absolute;
+}
+
+header hr {
+  color: white;
+}
+/* Fin du header */
+
+/* Début section presentation */
+
+.photo {
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+/* Fin section presentation */
+
+/* section competences */
+
+#competences .langages ul li {
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 2px 20px;
+}
+/* fin section competences */
+
+/* Section experiences */
+#experiences div {
+  background-color: rgba(238, 238, 238, 0.508);
+  border-radius: 20px;
+}
+/* fin section experiences */
+
+/* section diplomes */
+#diplomes {
+  background-color: rgba(0, 128, 128, 0.666);
+}
+
+#diplomes h3 {
+  font-size: 20px;
+}
+
+
+
+/* fin section diplomes */
+
+footer {
+  background-color: cadetblue;
+}
