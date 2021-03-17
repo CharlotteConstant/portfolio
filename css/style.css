@@ -63,7 +63,9 @@ header hr {
   font-size: 20px;
 }
 
-
+#experiences .text {
+  text-align: justify;
+}
 
 /* fin section diplomes */
 
