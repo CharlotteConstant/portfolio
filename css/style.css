@@ -1,5 +1,9 @@
 /* Style global */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* fin style global */
 
 /* CSS par section */
