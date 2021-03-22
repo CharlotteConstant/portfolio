@@ -49,6 +49,13 @@ header hr {
   border-radius: 10px;
   padding: 2px 20px;
 }
+
+#competences .log ul li {
+  background-color: crimson;
+  border-radius: 10px;
+  padding: 2px 20px;
+  margin: 10px;
+}
 /* fin section competences */
 
 /* Section experiences */
