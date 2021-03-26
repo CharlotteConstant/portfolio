@@ -7,6 +7,11 @@
     <script src="https://kit.fontawesome.com/5bb8a8247b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Sniglet&display=swap"
+        rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>CV Développeuse web et web mobile - Charlotte Constant</title>
 </head>
@@ -22,19 +27,20 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse collapse justify-content-end show" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav pt-2">
                         <a class="nav-link active" aria-current="page" href="#presentation">A propos</a>
-                        <a class="nav-link active" href="#diplomes">Diplômes</a>
+                        <a class="nav-link active px-3" href="#diplomes">Diplômes</a>
                         <a class="nav-link active" href="#experiences">Expériences</a>
-                        <a class="nav-link active" href="#competences">Compétences</a>
+                        <a class="nav-link active px-3" href="#competences">Compétences</a>
                         <a class="nav-link active" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
         <hr>
-        <div class="container text-white text-center">
-            <h1 class="py-5">Charlotte Constant <br> Développeuse web</h1>
+        <div class="text-white text-center">
+            <h1 class="pb-2 text-uppercase">Charlotte Constant </h1>
+            <h2>Développeuse web</h2>
         </div>
     </header>
     <!-- fin du header -->
@@ -44,11 +50,11 @@
         <!--section presentation-->
         <section id="presentation">
             <div class="container">
-                <h2 class="title my-4 pb-4 text-center d-flex flex-column">A propos <i
+                <h2 class="title my-4 py-4 text-center d-flex flex-column">A propos <i
                         class="fas fa-user-edit pt-2"></i>
                 </h2>
                 <div class="row">
-                    <img class="photo col-4 w-25 rounded-pill" src="img/photorond.png" alt="Photo Charlotte Constant">
+                    <img class="photo col-4 w-25 rounded-pill" src="img/photo rond.png" alt="Photo Charlotte Constant">
                     <p class="col-8 pt-3">Ancienne chargée de développement dans le secteur du sport, j'ai désormais de
                         solides compétences
                         en
@@ -59,7 +65,13 @@
                         Dans le cadre de ma formation "Développeur web et web mobile", je suis à la recherche d'un stage
                         du
                         16 septembre au 16 novembre 2021. <br />
-                        Je reste à l'écoute de toute opportunité professionnelle.</p>
+                        Je reste à l'écoute de toute opportunité professionnelle.<br>
+
+                        <a target="_blank" href="img/CV.pdf"
+                            class="btn text-center rounded-pill text-white mt-3 px-4">Télécharger
+                            mon CV</a>
+                    </p>
+
                 </div>
             </div>
         </section>
@@ -67,145 +79,163 @@
 
         <!-- Début section diplomes -->
         <section id="diplomes" class="text-white pt-4">
-            <h2 class="title text-center pb-4 d-flex flex-column">Diplômes <i
-                    class="fas fa-graduation-cap pt-2 pb-3"></i>
-            </h2>
+            <div class=container>
+                <h2 class="title text-center py-4 d-flex flex-column">Diplômes <i
+                        class="fas fa-graduation-cap pt-2 pb-3"></i>
+                </h2>
 
-            <ul class="diplomes list-unstyled text-center">
-                <li class="pb-5">
-                    <h3><strong>Bac +2 - Développeur Web et Web Mobile</strong> | <span class="fst-italic">Human Booster
-                            - 2020 / 2021 </span></h3>
-                    <p>Maquettage - HTML - CSS - Bootstrap - Base De Données - JavaScript - Angular - PHP - Symfony -
-                        Gestion de
-                        projet - WordPress</p>
-                </li>
-
-
-                <li class="pb-5">
-                    <h3><strong>Licence Professionnelle - Management et Gestion des Organisations Sportives</strong> |
-                        <span class="fst-italic">Université Lyon 1 - 2016 / 2017</span>
-                    </h3>
-                    <p>Communication - Gestion de projet - Gestion financière et prévisionnelle - marketing - Approche
-                        stratégique - Négociation et vente - Management</p>
-                </li>
+                <ul class="diplomes list-unstyled text-center">
+                    <li class="pb-5">
+                        <h3><strong>Bac +2 - Développeur Web et Web Mobile</strong> | <span class="fst-italic">Human
+                                Booster
+                                - 2020 / 2021 </span></h3>
+                        <p>Maquettage - HTML - CSS - Bootstrap - Base De Données - JavaScript - Angular - PHP - Symfony
+                            -
+                            Gestion de
+                            projet - WordPress</p>
+                    </li>
 
 
-                <li class="pb-5">
-                    <h3><strong>DEUST Animation et Gestion des Activités Physiques, Sportives et Culturelles</strong> |
-                        <span class="fst-italic">Université Lyon 1 - 2014 / 2016</span>
-                    </h3>
-                    <p>Gestion de projet - Marketing - Gestion comptable, financière et fiscale - Pédagogie - Sport
-                        collectif - Communication - Informatique - Psychologie - Sécurité des sites</p>
-                </li>
+                    <li class="pb-5">
+                        <h3><strong>Licence Professionnelle - Management et Gestion des Organisations Sportives</strong>
+                            |
+                            <span class="fst-italic">Université Lyon 1 - 2016 / 2017</span>
+                        </h3>
+                        <p>Communication - Gestion de projet - Gestion financière et prévisionnelle - marketing -
+                            Approche
+                            stratégique - Négociation et vente - Management</p>
+                    </li>
 
-            </ul>
+
+                    <li class="pb-5">
+                        <h3><strong>DEUST Animation et Gestion des Activités Physiques, Sportives et
+                                Culturelles</strong> |
+                            <span class="fst-italic">Université Lyon 1 - 2014 / 2016</span>
+                        </h3>
+                        <p>Gestion de projet - Marketing - Gestion comptable, financière et fiscale - Pédagogie - Sport
+                            collectif - Communication - Informatique - Psychologie - Sécurité des sites</p>
+                    </li>
+
+                </ul>
+            </div>
             </div>
         </section>
         <!-- Fin section diplomes -->
 
         <!-- Début section experiences -->
         <section id="experiences" class="py-4 text-center">
-            <h2 class="title d-flex flex-column pb-4 justify-content-center">Expériences pro <i
-                    class="fas fa-briefcase py-2"></i>
-            </h2>
-            <article class="d-flex flex-column align-items-center">
-                <div class="w-75 mb-5 px-5">
-                    <h3 class="pt-3">Agent de développement</h3>
-                    <p class="text-secondary pb-3">Sept 2018 à Sept 2020 | Asul Tennis Villeurbanne | CDI</p>
-                    <p class="text">Différentes missions m'ont été confiées telles que la communication,
-                        l'événementiel, la recherche
-                        de
-                        partenariat et de financement, la gestion de projet.
-                        Le pilotage du projet: "création d'un site internet", m'a permis de développer mes connaissances
-                        en
-                        WordPress, en référencement naturel et en création graphique.</p>
-                </div>
-                <div class="w-75 mb-5 px-5">
-                    <h3 class="pt-3">Chargée de développement</h3>
-                    <p class="text-secondary">Sept 2015 à Sept 2017 | Lyon Floorball Club | Stage et CDD</p>
-                    <p class="text">Dans un premier temps, je suis rentrée au LFC en alternance sur une année avec des
-                        missions en communication, en animation, en événementiel et en gestion de projet. Suite à mon
-                        alternance, j'ai pu continuer un an en CDD en parallèle de ma licence professionnelle. Mes
-                        tâches se sont intensifiées et renforcées notamment sur le plan de la communication (interviews,
-                        communiqués de presse, créations visuelles), gestion de projets, management, gestion
-                        budgétaire...
-                    </p>
-                </div>
-                <div class="w-75 mb-5 px-5">
-                    <h3 class="pt-3">Directrice Adjointe</h3>
-                    <p class="text-secondary">Sept 2014 à Sept 2015 | Centre de Loisirs de Garons (30) Léo Lagrange |
-                        CEE
-                    </p>
-                    <p class="text">En tant que Directrice adjointe de ce centre de loisirs, j'ai assisté la directrice
-                        dans différentes tâches: adminsitratives, préparation des contrats animateurs, des programmes,
-                        des activités... Lors des vacances j'ai pu animer différentes activités avec toutes les tranches
-                        d'âges (3-5ans/6-9ans/10-12ans et 13-15ans).</p>
-                </div>
-            </article>
+            <div class="container-fluid">
+                <h2 class="title d-flex flex-column py-4 justify-content-center">Expériences pro <i
+                        class="fas fa-briefcase py-2"></i>
+                </h2>
+                <article class="d-flex flex-column align-items-center">
+                    <div class="w-75 mb-5 px-5">
+                        <h3 class="pt-3">Agent de développement</h3>
+                        <p class="text-secondary pb-3">Sept 2018 à Sept 2020 | Asul Tennis Villeurbanne | CDI</p>
+                        <p class="text">Différentes missions m'ont été confiées telles que la communication,
+                            l'événementiel, la recherche
+                            de
+                            partenariat et de financement, la gestion de projet.
+                            Le pilotage du projet: "création d'un site internet", m'a permis de développer mes
+                            connaissances
+                            en
+                            WordPress, en référencement naturel et en création graphique.</p>
+                    </div>
+                    <div class="w-75 mb-5 px-5">
+                        <h3 class="pt-3">Chargée de développement</h3>
+                        <p class="text-secondary">Sept 2015 à Sept 2017 | Lyon Floorball Club | Stage et CDD</p>
+                        <p class="text">Dans un premier temps, je suis rentrée au LFC en alternance sur une année avec
+                            des
+                            missions en communication, en animation, en événementiel et en gestion de projet. Suite à
+                            mon
+                            alternance, j'ai pu continuer un an en CDD en parallèle de ma licence professionnelle. Mes
+                            tâches se sont intensifiées et renforcées notamment sur le plan de la communication
+                            (interviews,
+                            communiqués de presse, créations visuelles), gestion de projets, management, gestion
+                            budgétaire...
+                        </p>
+                    </div>
+                    <div class="w-75 mb-5 px-5">
+                        <h3 class="pt-3">Directrice Adjointe</h3>
+                        <p class="text-secondary">Sept 2014 à Sept 2015 | Centre de Loisirs de Garons (30) Léo Lagrange
+                            |
+                            CEE
+                        </p>
+                        <p class="text">En tant que Directrice adjointe de ce centre de loisirs, j'ai assisté la
+                            directrice
+                            dans différentes tâches: adminsitratives, préparation des contrats animateurs, des
+                            programmes,
+                            des activités... Lors des vacances j'ai pu animer différentes activités avec toutes les
+                            tranches
+                            d'âges (3-5ans/6-9ans/10-12ans et 13-15ans).</p>
+                    </div>
+                </article>
+            </div>
         </section>
         <!-- Fin section experiences -->
 
         <!-- Début section compétences -->
         <section id="competences">
-            <h2 class="title d-flex flex-column text-center pb-4">Compétences
-                <i class="fas fa-cogs pt-2"></i>
-            </h2>
-            <article class="row ps-5">
-                <div class="langages col-4">
-                    <div class="shadow-sm pb-5 pt-3">
-                        <h3 class="text-center">Langages de développement</h3> <br />
-                        <ul
-                            class="list-unstyled text-center d-flex justify-content-around align-items-center text-white">
-                            <li class="">HTML</li>
-                            <li class="">CSS</li>
-                            <li class="">Bootstrap</li>
-                            <li class="">Javascript</li>
-                        </ul>
+            <div class="container-fluid">
+                <h2 class="title d-flex flex-column text-center py-4">Compétences
+                    <i class="fas fa-cogs pt-2"></i>
+                </h2>
+                <article class="row px-2">
+                    <div class="langages col-4">
+                        <div class="shadow-lg pt-3 align-items-stretch">
+                            <h3 class="text-center">Langages de développement</h3> <br />
+                            <ul
+                                class="list-unstyled text-center d-flex justify-content-around align-items-stretch text-white">
+                                <li class="">HTML</li>
+                                <li class="">CSS</li>
+                                <li class="">Bootstrap</li>
+                                <li class="">Javascript</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-                <div class="log col-4">
-                    <div class="shadow-sm pb-2 pt-3">
-                        <h3 class="text-center">Logiciels</h3> <br />
-                        <ul
-                            class="list-unstyled text-center d-flex justify-content-around flex-wrap align-items-center text-white">
-                            <li>Figma</li>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Pack office</li>
-                            <li>Gantt Project</li>
-                        </ul>
+                    <div class="log col-4">
+                        <div class="shadow-lg pb-2 pt-3">
+                            <h3 class="text-center">Logiciels</h3> <br />
+                            <ul
+                                class="list-unstyled text-center d-flex justify-content-around flex-wrap align-items-stretch text-white">
+                                <li>Figma</li>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Pack office</li>
+                                <li>Gantt Project</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
 
-                <div class="Softskills col-4">
-                    <div class="shadow-sm pb-5 pt-3">
-                        <h3 class="text-center">Softskills</h3> <br />
-                        <ul class="list-unstyled d-flex justify-content-around align-items-center">
-                            <li>Vision 360°</li>
-                            <li>Communication</li>
-                            <li>Gestion de projet / Equipe</li>
-                            <li>Animation / Management</li>
-                        </ul>
+                    <div class="softskills col-4">
+                        <div class="shadow-lg pb-2 pt-3">
+                            <h3 class="text-center">Softskills</h3> <br />
+                            <ul
+                                class="list-unstyled text-center d-flex justify-content-around flex-wrap align-items-stretch text-white">
+                                <li>Vision 360°</li>
+                                <li>Communication</li>
+                                <li>Gestion de projet / Equipe</li>
+                                <li>Animation / Management</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-            </article>
+                </article>
+            </div>
         </section>
         <!-- Fin section compétences -->
 
-
-
-
-
-        <section>
-            <div id="contact">
-                <h2 class="title">Contact</h2>
-                <a href="https://www.linkedin.com/in/charlotte-constant-445302146/"><img </a>
-                    <p></p>
-            </div>
+        <!-- Début section projets -->
+        <section id="projet">
+            <div class="container">
+                <h2 class="title d-flex flex-column text-center py-4">Projets en cours
+                    <i class="fas fa-images"></i>
+                </h2>
         </section>
+
+        <!-- Fin section projets -->
     </main>
 
 
