@@ -8,8 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" href="img/logo1.png" />
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Sniglet&display=swap"
         rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -20,8 +19,9 @@
     <!-- debut header -->
     <header>
         <!--menu site-->
-        <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-md">
+        <div class="container-md">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+                <a><img class="logocharlotte mt-2" src="img/logo1.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,14 +29,14 @@
                 <div class="collapse navbar-collapse collapse justify-content-end show" id="navbarNavAltMarkup">
                     <div class="navbar-nav pt-2">
                         <a class="nav-link active" aria-current="page" href="#presentation">A propos</a>
-                        <a class="nav-link active px-3" href="#diplomes">Diplômes</a>
+                        <a class="nav-link active px-2" href="#diplomes">Diplômes</a>
                         <a class="nav-link active" href="#experiences">Expériences</a>
-                        <a class="nav-link active px-3" href="#competences">Compétences</a>
-                        <a class="nav-link active px-3" href="#realisations">Réalisations</a>
+                        <a class="nav-link active px-2" href="#competences">Compétences</a>
+                        <a class="nav-link active px-2" href="#realisations">Réalisations</a>
                         <a class="nav-link active" href="#contact">Contact</a>
                     </div>
                 </div>
-            </div>
+        </div>
         </nav>
         <hr>
         <div class="titre text-white text-center">
@@ -57,7 +57,7 @@
                 <div class="row">
                     <img class="photo col-4 w-25 h-25 rounded-pill" src="img/photoenrond.png"
                         alt="Photo Charlotte Constant">
-                    <div class="col-8 pt-2">
+                    <div class="col-8 pt-1">
                         <h4>Du sport au développement web, il n'y a qu'un clic! 💻</h4><br />
                         <p>Ancienne chargée de développement dans le secteur du sport, j'ai désormais de
                             solides compétences
@@ -76,8 +76,10 @@
                         </p>
 
                         <a target="_blank" href="img/CV.pdf"
-                            class="btn text-center rounded-pill text-white mt-3 px-4">Télécharger
+                            class="btn text-center rounded-pill text-white mt-3 px-4 me-5">Télécharger
                             mon CV</a>
+                        <a href="#realisations" class="btn text-center rounded-pill text-white mt-3 px-4 ms-5">Voir mes
+                            réalisations</a>
                     </div>
 
                 </div>
@@ -185,38 +187,39 @@
         <!-- Début section compétences -->
         <section id="competences">
             <div class="container-fluid">
-                <h2 class="title d-flex flex-column text-center py-4">Compétences
+                <h2 class="title d-flex flex-column text-center py-4 text-white">Compétences
                     <i class="fas fa-cogs pt-2"></i>
                 </h2>
                 <article class="row d-flex pb-5 mb-4">
                     <div class="langages col-4 d-flex">
-                        <div class="shadow-lg pt-3">
-                            <h3 class="text-center">Langages de développement</h3> <br />
+                        <div class="cadre shadow-lg pt-3">
+                            <h3 class="text-center">Développement</h3> <br />
                             <ul class="list-unstyled text-center d-flex justify-content-around flex-wrap text-white">
                                 <li class="">HTML</li>
                                 <li class="">CSS</li>
                                 <li class="">Bootstrap</li>
                                 <li class="">Javascript</li>
+                                <li class="">BDD (MySQL)</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="log col-4 d-flex">
-                        <div class="shadow-lg pt-3">
+                        <div class="cadre shadow-lg pt-3">
                             <h3 class="text-center">Logiciels</h3> <br />
                             <ul class="list-unstyled text-center d-flex justify-content-around flex-wrap text-white">
-                                <li>Figma</li>
-                                <li>Photoshop</li>
-                                <li>Illustrator</li>
-                                <li>Pack office</li>
-                                <li>Gantt Project</li>
+                                <li><img src="logo/figma.png"></li>
+                                <li><img src="logo/photoshop.png"></li>
+                                <li><img src="logo/illustrator.png"></li>
+                                <li><img src="logo/packoffice.png"></li>
+                                <li><img src="logo/gantt project.png"></li>
                             </ul>
                         </div>
                     </div>
 
 
                     <div class="softskills col-4 d-flex">
-                        <div class="shadow-lg pt-3">
+                        <div class="cadre shadow-lg pt-3">
                             <h3 class="text-center">Softskills</h3> <br />
                             <ul class="list-unstyled text-center d-flex justify-content-around flex-wrap text-white">
                                 <li>Vision 360°</li>
@@ -239,9 +242,9 @@
                     <i class="fas fa-images"></i>
                 </h2>
 
-                <h3 class="text-center mb-3">••• Créations visuelles •••</h3>
+                <h3 class="text-center mb-4">••• Créations visuelles •••</h3>
                 <div class="d-flex mb-5 justify-content-center">
-                    <div class="card mx-4" style="width: 18rem;">
+                    <div class="card mx-4 shadow-lg" style="width: 18rem;">
                         <a href="img/1.png" target="_blank">
                             <img src="img/1.png" class="card-img-top" alt="kakemonos"></a>
                         <div class="card-body">
@@ -251,7 +254,7 @@
                         </div>
                     </div>
 
-                    <div class="card mx-4" style="width: 18rem;">
+                    <div class="card mx-4 shadow-lg" style="width: 18rem;">
                         <a href="img/2.png" target="_blank">
                             <img src="img/2.png" class="card-img-top" alt="flyersLFC"></a>
                         <div class="card-body">
@@ -261,7 +264,7 @@
                         </div>
                     </div>
 
-                    <div class="card mx-4" style="width: 18rem;">
+                    <div class="card mx-4 shadow-lg" style="width: 18rem;">
                         <a href="img/3.png" target="_blank">
                             <img src="img/3.png" class="card-img-top" alt="felicia immo"></a>
                         <div class="card-body">
@@ -275,7 +278,19 @@
                 <h3 class="text-center">••• Sites •••</h3>
                 <div class="col-12 pb-5 text-center">
                     <p>~ En cours ~</p>
-                </div>
+                    <div class="d-flex mb-5 justify-content-center">
+                        <div class="card mx-4 shadow-lg" style="width: 18rem;">
+                            <a href="img/4.png" target="_blank">
+                                <img src="img/4.png" class="card-img-top" alt="bcase"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Maquettage du Bussiness Case (formation)</h5>
+                                <p class="card-text">Le bussiness case est un projet sur toute l'année, ou nous allons
+                                    pouvoir mettre en pratique toutes nos connaissance.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
         </section>
 
         <!-- Fin section projets -->
@@ -283,11 +298,20 @@
 
 
     <footer>
-        <h4 class="pt-4 ps-4 text-white">Me contacter</h4>
-        <a href="mailto:constantcharlotte8@orange.fr" target="_blank"><i class=""></i></a>
-        <a href="http://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <div class="container-md">
+            <article class="text-center pt-4 pb-2">
+                <h4 class="text-white pb-1">
+                    Contactez-moi <i class="fas fa-angle-double-down"></i>
+                </h4>
+                <a href="mailto:constantcharlotte8@orange.fr" target="_blank"><i
+                        class="fas fa-envelope text-white px-3 fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/charlotte-constant-445302146/" target="_blank"><i
+                        class="fab fa-linkedin-in text-white fa-lg"></i></a>
 
-        <p class="text-center text-white pb-3">2021 © Charlotte Constant - Tous droits réservés</p>
+            </article>
+
+            <p class="text-center text-white pt-2">2021 © Charlotte Constant - Tous droits réservés</p>
+        </div>
     </footer>
 
 
