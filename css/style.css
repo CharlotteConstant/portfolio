@@ -122,7 +122,6 @@ a:hover::after {
 
 #competences .cadre {
   background-color: rgba(225, 217, 217, 0.891);
-  z-index: 9999;
 }
 
 #competences .langages ul li {
@@ -132,10 +131,10 @@ a:hover::after {
   margin: 10px;
 }
 
-#competences .log ul li {
-  /* background-color: crimson; */
-  border-radius: 20px;
-  padding: 2px 10px;
+#competences .log ul li img {
+  width: 100px;
+  height: auto;
+  padding: 2px 20px;
   margin: 10px;
 }
 
