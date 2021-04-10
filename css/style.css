@@ -44,7 +44,7 @@ header .droite {
   overflow: hidden;
 }
 
-header nav .logocharlotte {
+.logocharlotte {
   width: 70px;
 }
 
@@ -81,11 +81,11 @@ header hr {
   color: white;
 }
 
-a {
+header .nav-link {
   position: relative;
   text-transform: uppercase;
 }
-a::after {
+.nav-link::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -97,7 +97,7 @@ a::after {
   background-color: rgba(255, 255, 255, 0.8);
   transition: transform 250ms;
 }
-a:hover::after {
+.nav-link:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
@@ -168,9 +168,27 @@ a:hover::after {
 
 /* fin section diplomes */
 
+/*Début section bandeau avant footer */
+#bandeauFooter {
+  background-color: #297d8a;
+}
+/* fin section */
+
 /* Début footer */
 footer {
   background-color: #34a2b3;
+  display: inline-block;
+}
+
+footer img {
+  font-size: 15px;
+}
+
+footer .logocharlotte {
+  border: 2px solid white;
+}
+
+footer article {
 }
 
 /* ANIMATION */
