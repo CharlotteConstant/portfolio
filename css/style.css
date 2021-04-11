@@ -37,7 +37,11 @@ header .droite {
 }
 
 .btn {
-  background-color: #838383;
+  background-color: #297d8a;
+}
+
+.btn:hover {
+  background-color: black;
 }
 
 .container-md {
@@ -105,10 +109,10 @@ header .nav-link {
 
 /* Début section presentation */
 
-.photo {
-  margin-bottom: 30px;
-  margin-left: 40px;
+#presentation p {
+  text-align: justify;
 }
+
 /* Fin section presentation */
 
 /* section competences */
@@ -172,6 +176,14 @@ header .nav-link {
 #bandeauFooter {
   background-color: #297d8a;
 }
+
+.fa-github-square:hover {
+  color: black !important;
+}
+
+.fa-linkedin-in:hover {
+  color: black !important;
+}
 /* fin section */
 
 /* Début footer */
@@ -186,9 +198,6 @@ footer img {
 
 footer .logocharlotte {
   border: 2px solid white;
-}
-
-footer article {
 }
 
 /* ANIMATION */
