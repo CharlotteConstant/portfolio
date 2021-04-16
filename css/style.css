@@ -252,6 +252,10 @@ header .nav-link {
   padding: 2px 20px;
   margin: 10px;
 }
+
+.cadre {
+  width: 600px;
+}
 /***** fin section competences *****/
 
 /***** début realisations *****/
@@ -299,9 +303,10 @@ footer .logocharlotte {
 /***** Fin footer *****/
 
 /****CSS MOBILE ****/
-/*@media screen and (max-width: 767px) {*/
-@media screen and (max-width: 767px) {
-  #realisations div .a {
+
+@media screen and (max-width: 900px) {
+  #realisations div .a,
+  .b {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
