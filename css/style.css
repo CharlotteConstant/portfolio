@@ -299,8 +299,8 @@ footer .logocharlotte {
 /***** Fin footer *****/
 
 /****CSS MOBILE ****/
-@media screen and (max-width: 767px) {
-  /*@media (min-width: 990px) {*/
+/*@media screen and (max-width: 767px) {*/
+@media (max-width: 990px) {
   #realisations div {
     flex-direction: column;
 
