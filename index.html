@@ -19,8 +19,9 @@
     <!-- debut header -->
     <header>
         <!--menu site-->
+
         <div class="container-md">
-            <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+            <nav id="menu" class="navbar navbar-expand-lg navbar-light">
                 <a><img class="logocharlotte mt-2" src="img/logo1.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
@@ -38,11 +39,19 @@
                 </div>
         </div>
         </nav>
-        <hr>
+        <!-- <hr> -->
+        <figure class="headerDW">
+            <img class="" src="img/ordi2.jpg" />
+            <figcaption>
+                <h3>Charlotte Constant<span>Développeuse Web</span></h3>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <!--
         <div class="titre text-white text-center">
             <h1 class="gauche pb-1 text-uppercase">Charlotte Constant </h1>
             <h2 class="droite">Développeuse web </h2>
-        </div>
+        </div>-->
     </header>
     <!-- fin du header -->
 
@@ -50,14 +59,14 @@
     <main>
         <!--section presentation-->
         <section id="presentation">
-            <div class="container">
+            <div class="container pe-3">
                 <h2 class="title my-4 py-4 text-center d-flex flex-column">A propos <i
                         class="fas fa-user-edit pt-2"></i>
                 </h2>
-                <div class="row">
-                    <img class="photo col-4 w-25 h-25 rounded-pill pt-5" src="img/photoenrond.png"
+                <div class="row justify-content-center">
+                    <img class="photo col-lg-4 w-25 h-25 rounded-pill me-lg-5 mt-lg-5" src="img/photoenrond.png"
                         alt="Photo Charlotte Constant">
-                    <div class="col-8 pt-1">
+                    <div class="col-lg-8 pt-1">
                         <h4 class="titre1">Du sport au développement web, il n'y a qu'un clic! 💻</h4><br />
                         <p>Je me présente, je m'appelle Charlotte, et vous amène à la découverte de mon profil. <br>
                             Partagée entre
@@ -86,13 +95,14 @@
                         Je reste à l'écoute de toute opportunité, n'hésitez pas à me contacter.<br>
                         <strong>#front-end #devweb #lyon #montpellier</strong><br>
                         </p>
-
-                        <a target="_blank" href="img/CV.pdf"
-                            class="btn text-center rounded-pill text-white mt-3 px-4 me-5 fw-bold">Télécharger
-                            mon CV</a>
-                        <a href="#realisations"
-                            class="btn text-center rounded-pill text-white mt-3 px-4 ms-5 fw-bold">Voir mes
-                            réalisations</a>
+                        <div class="boutons d-flex">
+                            <a target="_blank" href="img/CV.pdf"
+                                class="btn text-center rounded-pill text-white mt-3 px-4 fw-bold">Télécharger
+                                mon CV</a>
+                            <a href="#realisations"
+                                class="btn text-center rounded-pill text-white mt-3 px-4 fw-bold">Voir mes
+                                réalisations</a>
+                        </div>
                     </div>
 
                 </div>
@@ -205,7 +215,7 @@
                     <i class="fas fa-cogs pt-2"></i>
                 </h2>
                 <article class="row d-flex pb-5 mb-4">
-                    <div class="langages col-4 d-flex">
+                    <div class="langages col-lg-4 mb-4 d-flex">
                         <div class="cadre shadow-lg pt-3">
                             <h3 class="text-center">Développement</h3> <br />
                             <ul class="list-unstyled text-center d-flex justify-content-around flex-wrap text-white">
@@ -218,7 +228,7 @@
                         </div>
                     </div>
 
-                    <div class="log col-4 d-flex">
+                    <div class="log col-lg-4 mb-4 d-flex">
                         <div class="cadre shadow-lg pt-3">
                             <h3 class="text-center">Logiciels</h3> <br />
                             <ul class="list-unstyled text-center d-flex flex-wrap justify-content-around text-white">
@@ -234,7 +244,7 @@
                     </div>
 
 
-                    <div class="softskills col-4 d-flex">
+                    <div class="softskills col-lg-4 mb-4 d-flex">
                         <div class="cadre shadow-lg pt-3">
                             <h3 class="text-center">Softskills</h3> <br />
                             <ul class="list-unstyled text-center d-flex justify-content-around flex-wrap text-white">
@@ -365,7 +375,9 @@
 
     </footer>
     <!-- Fin footer -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

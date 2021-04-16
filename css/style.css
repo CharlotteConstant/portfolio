@@ -1,4 +1,10 @@
-/* Style global */
+/*************************
+ Style global 
+ ************************/
+
+body {
+  color: #292929;
+}
 
 html {
   scroll-behavior: smooth;
@@ -10,34 +16,8 @@ nav {
   font-family: "sniglet", serif;
 }
 
-header .gauche {
-  font-family: "sniglet", serif;
-  font-size: 50px;
-  letter-spacing: 2px;
-  margin-top: 100px;
-  animation-duration: 3s;
-  animation-name: glissement;
-  animation-direction: normal;
-}
-
-header .droite {
-  animation-duration: 3s;
-  animation-name: glissement;
-}
-
-@keyframes glissement {
-  100% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-  0% {
-    -webkit-transform: translate(-100%);
-    transform: translate(-100%);
-  }
-}
-
 .btn {
-  background-color: #297d8a;
+  background-color: #b24434;
 }
 
 .btn:hover {
@@ -52,37 +32,32 @@ header .droite {
   width: 70px;
 }
 
-/* fin style global */
+/***************
+ fin style global 
+ ****************/
 
-/* CSS par section */
+/****************
+ CSS par section 
+ ****************/
 
-/* Début du header */
+/***** Début du header *****/
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.302), rgba(0, 0, 0, 0.302)),
-    url(../img/IMG_9554.jpg);
-  background-position: left;
-  background-size: cover;
-  height: 400px;
   position: relative;
 }
-
-header::after {
-  content: "";
-  height: 40px;
-  width: 40px;
-  background-color: white;
-  transform: rotate(45deg);
-  top: 380px;
-  left: calc(50% - 20px);
-  position: absolute;
+@media (min-width: 990px) {
+  header::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    transform: rotate(45deg);
+    top: 580px;
+    left: calc(50% - 20px);
+    position: absolute;
+  }
 }
-
 nav {
   font-size: 18px;
-}
-
-header hr {
-  color: white;
 }
 
 header .nav-link {
@@ -98,16 +73,117 @@ header .nav-link {
   transform-origin: 50% 50%;
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #34a2b3;
   transition: transform 250ms;
 }
 .nav-link:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Fin du header */
+/* style animation header */
 
-/* Début section presentation */
+.headerDW {
+  background-color: #fff; /* blanc*/
+  color: #292929; /*couleur texte*/
+  display: inline-block;
+  font-size: 30px;
+  /*margin: 8px;*/
+  /*max-width: 315px;*/
+  /*min-width: 230px;*/
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  height: 500px;
+}
+
+.headerDW * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.headerDW:after {
+  background-color: #297d8a;
+  height: 150%;
+  bottom: -145%;
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.headerDW img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.302), rgba(0, 0, 0, 0.302));
+}
+
+.headerDW figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.headerDW h3 {
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.headerDW h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.headerDW a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.headerDW:hover > img,
+.headerDW.hover > img {
+  opacity: 0.1;
+}
+
+.headerDW:hover:after,
+.headerDW.hover:after {
+  bottom: 95%;
+}
+
+.headerDW:hover figcaption,
+.headerDW.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/***** Fin du header *****/
+
+/***** Début section presentation *****/
 
 #presentation p {
   text-align: justify;
@@ -116,10 +192,34 @@ header .nav-link {
 #presentation .titre1 {
   color: #297d8a;
 }
+#presentation .boutons .btn {
+  margin-right: 50px;
+}
 
-/* Fin section presentation */
+/***** Fin section presentation *****/
 
-/* section competences */
+/***** section diplomes *****/
+#diplomes {
+  background-color: #34a2b3;
+}
+
+#diplomes h3 {
+  font-size: 20px;
+}
+
+/***** fin section diplomes *****/
+
+/***** Section experiences *****/
+#experiences article div {
+  background-color: rgba(238, 238, 238, 0.508);
+  border-radius: 20px;
+}
+#experiences .text {
+  text-align: justify;
+}
+/***** fin section experiences *****/
+
+/***** section competences *****/
 
 #competences {
   background-image: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.302)),
@@ -152,31 +252,24 @@ header .nav-link {
   padding: 2px 20px;
   margin: 10px;
 }
-/* fin section competences */
+/***** fin section competences *****/
 
-/* Section experiences */
-#experiences article div {
-  background-color: rgba(238, 238, 238, 0.508);
-  border-radius: 20px;
+/***** début realisations *****/
+
+#realisations .card img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-/* fin section experiences */
-
-/* section diplomes */
-#diplomes {
-  background-color: #34a2b3;
-}
-
-#diplomes h3 {
-  font-size: 20px;
+#realisations .card:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-#experiences .text {
-  text-align: justify;
-}
+/***** fin realisations *****/
 
-/* fin section diplomes */
-
-/*Début section bandeau avant footer */
+/***** Début section bandeau avant footer *****/
 #bandeauFooter {
   background-color: #297d8a;
 }
@@ -188,9 +281,9 @@ header .nav-link {
 .fa-linkedin-in:hover {
   color: black !important;
 }
-/* fin section */
+/***** fin section *****/
 
-/* Début footer */
+/***** Début footer *****/
 footer {
   background-color: #34a2b3;
   display: inline-block;
@@ -203,16 +296,19 @@ footer img {
 footer .logocharlotte {
   border: 2px solid white;
 }
+/***** Fin footer *****/
 
-/* ANIMATION */
+/****CSS MOBILE ****/
+@media screen and (max-width: 767px) {
+  /*@media (min-width: 990px) {*/
+  #realisations div {
+    flex-direction: column;
 
-#realisations .card img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-#realisations .card:hover img {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #presentation .boutons {
+    flex-direction: column;
+    margin-left: 50px;
+  }
 }
