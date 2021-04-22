@@ -8,7 +8,7 @@ $(".hover").mouseleave(function () {
 // animation au scroll
 const sr = ScrollReveal({
   reset: false,
-  mobile: true,
+  mobile: false,
 });
 
 sr.reveal(".logocharlotte", {
@@ -24,7 +24,6 @@ sr.reveal(".photoInfo", {
   origin: "left",
   distance: "300px",
   duration: 2000,
-  //delay: 500,
 });
 
 sr.reveal(".btn", {
