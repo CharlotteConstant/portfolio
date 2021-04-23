@@ -38,7 +38,7 @@ sr.reveal(".btn", {
 
 sr.reveal(".emploi1", {
   origin: "left",
-  distance: "300px",
+  distance: "170px",
   duration: 2000,
   delay: 500,
 });
@@ -47,7 +47,7 @@ sr.reveal(
   ".emploi2",
   {
     origin: "right",
-    distance: "300px",
+    distance: "170px",
     duration: 2000,
     delay: 500,
   },
@@ -58,7 +58,7 @@ sr.reveal(
   ".emploi3",
   {
     origin: "left",
-    distance: "300px",
+    distance: "170px",
     duration: 2000,
     delay: 500,
   },
