@@ -32,6 +32,65 @@ nav {
   width: 70px;
 }
 
+.title {
+  position: relative;
+}
+
+.apropos::after {
+  content: "";
+  width: 140px;
+  height: 10px;
+  background-color: #34a2b3a1;
+  position: absolute;
+  top: calc(100% - 80px);
+  left: calc(50% - 65px);
+  z-index: -1;
+}
+
+.diplomes::after {
+  content: "";
+  width: 140px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.426);
+  position: absolute;
+  top: calc(100% - 95px);
+  left: calc(50% - 65px);
+  z-index: 1;
+}
+
+.experiences::after {
+  content: "";
+  width: 235px;
+  height: 10px;
+  background-color: #34a2b3b1;
+  position: absolute;
+  top: calc(100% - 85px);
+  left: calc(50% - 112px);
+  z-index: -1;
+}
+
+.competences::after {
+  content: "";
+  width: 210px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.426);
+  position: absolute;
+  top: calc(100% - 78px);
+  left: calc(50% - 100px);
+  z-index: 1;
+}
+
+.realisations::after {
+  content: "";
+  width: 185px;
+  height: 10px;
+  background-color: #34a2b393;
+  position: absolute;
+  top: calc(100% - 70px);
+  left: calc(50% - 86px);
+  z-index: -1;
+}
+
 /***************
  fin style global 
  ****************/
@@ -91,11 +150,12 @@ header .nav-link {
   display: inline-block;
   font-size: 30px;
   /*margin: 8px;*/
-  /*max-width: 315px;*/
-  /*min-width: 230px;*/
+  /* max-width: 315px;*/
+  /* min-width: 230px;*/
   overflow: hidden;
   position: relative;
   text-align: center;
+  width: 100%;
   height: 500px;
 }
 
