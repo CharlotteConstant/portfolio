@@ -381,4 +381,15 @@ footer .logocharlotte {
     flex-direction: column;
     margin-left: 50px;
   }
+
+  #menu ul li {
+    font-size: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #menu span {
+    font-size: 50px;
+  }
 }
